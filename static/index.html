@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SentinelAI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      :root {
+        --bg: #f4efe6;
+        --panel: #fffaf2;
+        --ink: #172121;
+        --accent: #b6452c;
+        --muted: #6a6f73;
+      }
+      body {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        background: radial-gradient(circle at top, #fff7e6, var(--bg));
+        color: var(--ink);
+      }
+      main {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 48px 24px;
+      }
+      .panel {
+        background: var(--panel);
+        border: 1px solid rgba(23, 33, 33, 0.08);
+        border-radius: 20px;
+        padding: 24px;
+        box-shadow: 0 18px 40px rgba(23, 33, 33, 0.08);
+      }
+      h1 { margin-top: 0; font-size: 3rem; }
+      code {
+        background: rgba(23, 33, 33, 0.06);
+        padding: 2px 6px;
+        border-radius: 6px;
+      }
+      p { color: var(--muted); line-height: 1.6; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="panel">
+        <h1>SentinelAI</h1>
+        <p>Incident ingestion, retrieval, and investigation pipeline for development-phase demos.</p>
+        <p>Use <code>/docs</code> for the API, <code>/health</code> for liveness, and the incident/report endpoints to drive the full workflow.</p>
+      </div>
+    </main>
+  </body>
+</html>

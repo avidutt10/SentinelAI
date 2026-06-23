@@ -1,0 +1,10 @@
+{
+  "title": "API pods restarting with memory pressure",
+  "severity": "high",
+  "service": "api-service",
+  "metadata": {
+    "region": "us-east-1",
+    "environment": "eval"
+  },
+  "logs": "2026-06-23T10:00:11Z service=api-service request volume spike detected\n2026-06-23T10:01:22Z ERROR out of memory while handling checkout requests\n2026-06-23T10:01:25Z kubelet killed process pid=1124 container=api-service\n2026-06-23T10:02:05Z service=api-service pod restarted"
+}

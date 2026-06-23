@@ -1,0 +1,10 @@
+{
+  "title": "Latency spike after release rollout",
+  "severity": "medium",
+  "service": "search-service",
+  "metadata": {
+    "region": "ap-south-1",
+    "environment": "eval"
+  },
+  "logs": "2026-06-23T07:40:00Z deployment completed version 1.14.2 service=search-service\n2026-06-23T07:41:10Z WARN response time increased to 2500ms\n2026-06-23T07:42:15Z ERROR slow query threshold exceeded\n2026-06-23T07:43:00Z rollback initiated for version 1.14.2"
+}

@@ -1,0 +1,10 @@
+{
+  "title": "New feature flag caused cascading errors",
+  "severity": "high",
+  "service": "recommendation-service",
+  "metadata": {
+    "region": "us-east-1",
+    "environment": "eval"
+  },
+  "logs": "2026-06-23T12:00:00Z deployment completed version 2.7.0 service=recommendation-service\n2026-06-23T12:00:30Z INFO new release feature flag enabled\n2026-06-23T12:01:10Z ERROR request timeout on downstream personalization service\n2026-06-23T12:01:25Z WARN rollback initiated due to rising error rate"
+}

@@ -1,0 +1,10 @@
+{
+  "title": "P95 latency degraded under storage pressure",
+  "severity": "medium",
+  "service": "reporting-service",
+  "metadata": {
+    "region": "us-east-2",
+    "environment": "eval"
+  },
+  "logs": "2026-06-23T11:00:00Z service=reporting-service response time crossed 1800ms\n2026-06-23T11:00:40Z WARN slow query warnings increasing\n2026-06-23T11:01:10Z INFO disk io wait above 45 percent on backing node\n2026-06-23T11:01:55Z latency remained elevated"
+}

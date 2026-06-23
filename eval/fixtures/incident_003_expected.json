@@ -1,0 +1,4 @@
+{
+  "expected_root_cause_contains": "network timeout",
+  "expected_doc_ids": ["runbook_network_timeout", "postmortem_tls_timeout"]
+}

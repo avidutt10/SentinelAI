@@ -1,0 +1,10 @@
+{
+  "title": "Gateway calls timing out after upstream instability",
+  "severity": "medium",
+  "service": "gateway-service",
+  "metadata": {
+    "region": "eu-central-1",
+    "environment": "eval"
+  },
+  "logs": "2026-06-23T08:10:00Z service=gateway-service outbound calls increased\n2026-06-23T08:10:21Z ERROR TLS handshake timeout against payments provider\n2026-06-23T08:10:25Z WARN connection reset observed for upstream call\n2026-06-23T08:11:00Z requests retried and timed out"
+}

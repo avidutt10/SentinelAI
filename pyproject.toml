@@ -1,0 +1,34 @@
+[project]
+name = "sentinelai"
+version = "0.1.0"
+description = "Development-first incident investigation service with retrieval and agent workflow."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "alembic>=1.14.0",
+    "fastapi>=0.115.0",
+    "httpx>=0.28.0",
+    "langgraph>=0.2.60",
+    "pydantic-settings>=2.6.1",
+    "python-dotenv>=1.0.1",
+    "qdrant-client>=1.12.1",
+    "sqlalchemy>=2.0.36",
+    "structlog>=24.4.0",
+    "uvicorn[standard]>=0.32.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.4",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["sentinelai*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

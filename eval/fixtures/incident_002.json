@@ -1,0 +1,10 @@
+{
+  "title": "Checkout failures caused by pool exhaustion",
+  "severity": "high",
+  "service": "checkout-service",
+  "metadata": {
+    "region": "us-west-2",
+    "environment": "eval"
+  },
+  "logs": "2026-06-23T09:20:00Z service=checkout-service latency climbed above 4s\n2026-06-23T09:21:10Z ERROR connection pool exhausted for postgres primary\n2026-06-23T09:21:12Z WARN too many connections from app worker group\n2026-06-23T09:22:00Z requests timed out waiting for db session"
+}

@@ -1,0 +1,4 @@
+{
+  "expected_root_cause_contains": "connection pool",
+  "expected_doc_ids": ["runbook_db_pool", "postmortem_db_traffic_spike"]
+}
